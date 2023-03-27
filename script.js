@@ -144,7 +144,7 @@ weatherData.push(data)
       const humidity = data.main.humidity;
       const p1 = document.getElementById(`p1${i}`);
       
-  p1.innerHTML += `Temperature : ${temperature}&deg;C <br> Humidity : ${humidity}&percnt<br> Description : ${description}`;
+  p1.innerHTML = `Temperature : ${temperature}&deg;C <br> Humidity : ${humidity}&percnt<br> Description : ${description}`;
   })
   .catch(error => console.log("Error", error));  
   }
